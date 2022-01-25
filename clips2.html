@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="metaname" content="with=device-width, initial-scale=1.0" />
+    <title>Proof of Concept Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="clips2">
+      <nav>
+        <a href="index.html"><img src="images/home.png" /> </a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-window-close" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="clips2.html">CLIPS</a></li>
+            <li><a href="store.html">STORE</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="intro">
+        <h1>Clips</h1>
+        <p>Video Collection</p>
+      </div>
+      <div class="clips2-row">
+        <div class="clips2-col">
+          <h3>VIDEO 1</h3>
+          <p>Video 1 placeholder text</p>
+          <div class="VD">
+            <video
+              id="V"
+              controls="controls"
+              width="600"
+              height="600"
+              name="Video Name"
+            >
+              <source src="images/Tempest.MOV" />
+            </video>
+          </div>
+          <h3>Video 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <div class="VD">
+            <video
+              id="V"
+              controls="controls"
+              width="600"
+              height="600"
+              name="Video Name"
+            >
+              <source src="images/car.MOV" />
+            </video>
+          </div>
+          <h3>Video 3</h3>
+          <p>Video 3 placeholder text</p>
+          <div class="VD">
+            <video
+              id="V"
+              controls="controls"
+              width="600"
+              height="600"
+              name="Video Name"
+            >
+              <source src="images/IMG_6264.MOV" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

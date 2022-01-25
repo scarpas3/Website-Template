@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "metaname" content = "with=device-width, initial-scale=1.0">
+        <title>Proof of Concept Website</title>
+        <link rel = "stylesheet" href = "style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class = "header">
+            <nav>
+                <a href="index.html"><img src ="images/home.png"> </a>
+                <div class = "nav-links" id = "navLinks">
+                    <i class="fa fa-window-close" onclick = "hideMenu()"></i>
+                    <ul>
+                        <li><a href = "index.html">HOME</a></li>
+                        <li><a href = "about.html">ABOUT</a></li>
+                        <li><a href = "clips2.html">CLIPS</a></li>
+                        <li><a href = "store.html">STORE</a></li>
+                    </ul>
+                </div>
+            <i class="fa fa-bars" onclick = "showMenu()"></i>
+            </nav>
+            <div class = "text-box">
+                <h1>PLACEHOLDER TITLE</h1>
+                <p>This is my website template. Anything about it can be changed at will. The different pages,  titles, backgrounds, colors, layout, etc can
+                    all be changed. <br> For any inquiries, contact Anthony Scarpa at scarpas3@tcnj.edu</p>
+            </div>
+        </section>
+
+        <!---JS FOR MOBILE TOGGLE MENU-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
